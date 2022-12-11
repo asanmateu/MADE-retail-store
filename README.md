@@ -2,4 +2,4 @@
 
 Building a furniture retailer software from scratch focusing on domain-driven design, test-driven development, and event-driven microservices. 
 
-Built its software architecture while reading through **Architecture Patterns with Python Enabling Test-Driven Development, Domain-Driven Design, and Event-Driven Microservices by Bob Gregory Harry Percival**.
+Built its software architecture while reading through **Architecture Patterns with Python Enabling Test-Driven Development, Domain-Driven Design, and Event-Driven Microservices by Bob Gregory and Harry Percival**.
