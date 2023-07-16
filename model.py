@@ -5,7 +5,8 @@ from typing import Optional, Set, List
 from exceptions import OutOfStock
 
 
-@dataclass(frozen=True)
+#@dataclass(frozen=True)
+@dataclass(unsafe_hash=True)
 class OrderLine:
     orderid: str
     sku: str
@@ -65,6 +66,10 @@ class Batch:
     def can_allocate(self, line: OrderLine) -> bool:
         return self.sku == line.sku and \
             self.available_quantity >= line.qty
+
+    @property
+    def purchased_quantity(self):
+        return self._purchased_quantity
 
 
 def allocate(line: OrderLine, batches: List[Batch]) -> str:
